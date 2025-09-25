@@ -1,0 +1,16 @@
+@model IEnumerable<LmsApp.Models.Admin>
+<h2>Admin Dashboard</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Username</th>
+    </tr>
+    @foreach (var admin in Model)
+    {
+        <tr>
+            <td>@admin.AdminId</td>
+            <td>@admin.Username</td>
+        </tr>
+    }
+</table>
+<a href="/Admin/Create">Add New Admin</a>

@@ -1,0 +1,11 @@
+@model LmsApp.Models.Admin
+<h2>Add Admin</h2>
+<form asp-action="Create" method="post">
+    <label>Username:</label>
+    <input asp-for="Username" />
+    <br />
+    <label>Password:</label>
+    <input asp-for="PasswordHash" type="password" />
+    <br />
+    <button type="submit">Create</button>
+</form>

@@ -1,0 +1,22 @@
+@model IEnumerable<LmsApp.Models.Student>
+<h2>Student List</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Address</th>
+    </tr>
+    @foreach (var student in Model)
+    {
+        <tr>
+            <td>@student.StudentId</td>
+            <td>@student.FullName</td>
+            <td>@student.Email</td>
+            <td>@student.Phone</td>
+            <td>@student.Address</td>
+        </tr>
+    }
+</table>
+<a href="/Student/Create">Register New Student</a>

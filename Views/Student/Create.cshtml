@@ -1,0 +1,31 @@
+@model LmsApp.Models.Student
+<h2>Register Student</h2>
+<form asp-action="Create" method="post">
+    <label>Full Name:</label>
+    <input asp-for="FullName" />
+    <span asp-validation-for="FullName"></span>
+    <br />
+
+    <label>Email:</label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+    <br />
+
+    <label>Password:</label>
+    <input asp-for="PasswordHash" type="password" />
+    <span asp-validation-for="PasswordHash"></span>
+    <br />
+
+    <label>Phone:</label>
+    <input asp-for="Phone" />
+    <br />
+
+    <label>Address:</label>
+    <input asp-for="Address" />
+    <br />
+
+    <button type="submit">Register</button>
+</form>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
