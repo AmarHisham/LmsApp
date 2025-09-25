@@ -1,4 +1,4 @@
-# LmsApp (Currently Underdevolopment)
+# LmsApp (Currently Underdevelopment)
 # Student Learning Management System (LMS)
 
 ## 📖 Overview
